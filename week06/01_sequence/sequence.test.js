@@ -19,14 +19,14 @@ function procTest({ name, makefn, expfns }) {
 }
 
 function testNext(sqn, expected) {
-  test(sqn.next()).toBe(expected)
+  expect(sqn.next()).toBe(expected)
 }
 
 function testCurrent(sqn, expected) {
-  test(sqn.current()).toBe(expected)
+  expect(sqn.current()).toBe(expected)
 }
 function testFinished(sqn, expected) {
-  test(sqn.finished()).toBe(expected)
+  expect(sqn.finished()).toBe(expected)
 }
 
 procTest({
